@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="CSS/Estilos.css" rel="stylesheet" />
+    <script src ="JavaScript/Registro.js" ></script>
+</head>
+ 
+<body>
+    <div id="registrar">
+        <a href="LogIn.html">Regresar</a>
+    </div>
+    <div id="envoltura">
+        <div id="contenedor">
+ 
+            <div id="cabecera">
+                
+            </div>
+ 
+            <div id="cuerpo">
+ 
+                <form action="registrar.php;" method="post" >
+                    <p><label for="nombre">Nombre:</label></p>
+                    <input name="nombre" type="text" id="nombre" class="nombre" placeholder="Pon tu nombre" autofocus="" required=""/>
+                    
+                    <p><label for="telefono">Telefono:</label></p>
+                    <input name="telefono" type="text" id="nombre" class="nombre" placeholder="Pon tu telefono" />
+                    
+                    <p><label for="DNI">DNI:</label></p>
+                    <input name="DNI" type="text" id="DNI" class="DNI" placeholder="Pon tu DNI" />
+                 
+                    <p><label for="correo">Correo:</label></p>
+                    <input name="correo" type="email" id="correo" class="correo" placeholder="Pon tu mail" required="" />
+ 
+                    <p><label for="pass">Password:</label></p>
+                    <input name="pass" type="password" id="pass" class="pass" placeholder="Pon tu contraseña" required="" />
+ 
+                    
+ 
+                    <p id="boton"><input name="submit" type="submit" id="boton" value="Registrar" onsubmit=" validar();" class="boton"/></p>
+                </form>
+            </div>
+ 
+            
+        </div>
+ 
+    </div>
+ 
+</body>
+ 
+</html>
